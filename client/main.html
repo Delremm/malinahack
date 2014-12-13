@@ -1,0 +1,30 @@
+<head>
+  <title>MalinaHack</title>
+</head>
+<body>
+  <div class="container">
+    <header class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="/">Malina</a>
+      </div>
+    </header>
+    <div id="main" class="row-fluid">
+      {{> description}}
+      <ul>
+        {{#each tasks}}
+          {{> task}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</body>
+
+<template name="description">
+  <div>
+  Description for hackaton
+  </div>
+</template>
+
+<template name="task">
+    <li>{{text}}</li>
+</template>
